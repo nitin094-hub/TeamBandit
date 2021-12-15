@@ -10,7 +10,6 @@ import './Home.scss';
 function Home() {
   return (
     <main className="content">
-      <img src={bgLoki}></img>
       <section>
         <h2>ESTÁ DISPONÍVEL AGORA!</h2>
         <h3>LOKI</h3>

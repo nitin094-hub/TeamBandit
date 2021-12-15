@@ -19,5 +19,11 @@
 }
 
 .content {
+  min-height: 100vh;
+  background-image: url(./img/bgLoki.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
   font-family: "B612-Regular";
 }
