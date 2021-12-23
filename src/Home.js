@@ -1,19 +1,20 @@
 import "./fonts/B612-Regular.ttf";
 import "./fonts/B612-Bold.ttf";
-import "./fonts/B612-Italic.ttf";
-import "./fonts/B612-BoldItalic.ttf";
 import capaLoki from "./img/capaLoki.png";
 import bgLoki from "./img/bgLoki.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import './Home.scss';
 
 
 function Home() {
   return (
     <main className="content">
-      <section>
+      <header>
         <h2>ESTÁ DISPONÍVEL AGORA!</h2>
-        <h3>LOKI</h3>
-      </section>
+        <h1>LOKI</h1>
+      </header>
       <section>
         <aside>
           <img src={capaLoki}></img>
@@ -24,14 +25,23 @@ function Home() {
             retoma seu papel como o Deus do Mal em uma nova série 
             que ocorre após os eventos de “Vingadores: Endgame”. 
           </p>
-          <div>
-            <span>51min</span>
-            {/* STARS */}
-            <span>2021</span>
+          <div className="movie-stats">
+            <div className="movie-time">
+              <FontAwesomeIcon className="clock" icon={faClock} />
+              <span>51min</span>
+            </div>
+            <div className="movie-stars">
+              <FontAwesomeIcon className="star active" icon={faStar} />
+              <FontAwesomeIcon className="star active" icon={faStar} />
+              <FontAwesomeIcon className="star active" icon={faStar} />
+              <FontAwesomeIcon className="star active" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
+            <span className="movie-years">2021</span>
           </div>
-          <div>
-            <button>ASSISTIR AGORA</button>
-            <button>TRAILER</button>
+          <div className="container-buttons"> 
+            <button className="btn-primary">ASSISTIR AGORA</button>
+            <button className="btn-secondary">TRAILER</button>
           </div>
         </article>
       </section>

@@ -8,22 +8,143 @@
   src: local("B612-Bold"), url("./fonts/B612-Bold.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "B612-Italic";
-  src: local("B612-Italic"), url("./fonts/B612-Italic.ttf")  format("truetype");
-}
-
-@font-face {
-  font-family: "B612-BoldItalic";
-  src: local("B612-BoldItalic"), url("./fonts/B612-BoldItalic.ttf") format("truetype");
-}
-
 .content {
   min-height: 100vh;
-  background-image: url(./img/bgLoki.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bgLoki.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--white);
   font-family: "B612-Regular";
+  padding: 4.5rem 2rem;
+
+  header {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      font-weight: bold;
+      font-family: "B612-Bold";
+      color: var(--white);
+      text-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 9.6rem;
+      line-height: 11.7rem;
+      font-weight: bold;
+      font-family: "B612-Bold";
+      color: var(--white);
+      margin-bottom: 5rem;
+    }
+
+  } 
+
+  section {
+
+    aside img {
+      display: none
+    }
+
+    article{ 
+
+      text-align: center;
+    
+      p {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        color: var(--white);
+        margin-bottom: 3.5rem;
+      }
+
+      .movie-stats {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+        .movie-time {
+          margin-bottom: 1.5rem;
+        }
+        
+        .movie-stars {
+          margin-bottom: 1.5rem;
+        }
+
+        .movie-years {
+          margin-bottom: 4.5rem;
+        }
+
+        span {
+          font-weight: bold;
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+          color: var(--white);
+          vertical-align: baseline;
+        }
+
+        .clock {
+          width: 2.5rem;
+          height: 2.5rem;
+          vertical-align: top;
+          margin-right: 1rem;
+        }
+
+        .star {
+          width: 3rem;
+          height: 3rem;
+
+          path {
+            color: rgba(255, 255, 255, 0.5);
+          }
+
+          &.active {
+             path { 
+                color: #FFA800
+             }
+          }
+        }
+
+
+      }
+
+      .container-buttons {
+
+          display: flex;
+          flex-direction: column;
+
+          .btn-primary {
+            padding: 1.5rem 2.7rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            background-color: var(--blue);
+            border-radius: .3rem;
+            color: var(--white);
+            font-family: "B612-Regular";
+            margin-bottom: 2rem;
+          }
+
+          .btn-secondary {
+            padding: 1.5rem 2.7rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            background-color: var(--black);
+            border: .1rem solid var(--white);
+            border-radius: .3rem;
+            color: var(--white);
+            font-family: "B612-Regular";
+          }
+
+      }
+
+    }
+
+  } 
 }
+
+@media(min-width: 768px) {
+  
+}
+
