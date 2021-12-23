@@ -64,6 +64,8 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+        margin-bottom: 4.5rem;
+
 
         .movie-time {
           margin-bottom: 1.5rem;
@@ -71,10 +73,6 @@
         
         .movie-stars {
           margin-bottom: 1.5rem;
-        }
-
-        .movie-years {
-          margin-bottom: 4.5rem;
         }
 
         span {
@@ -160,6 +158,38 @@
         }
     
       } 
+
+      section {
+
+        display: grid;
+        grid-template-columns: .5fr 2fr;
+        align-items: center;
+
+        aside img {
+          display: block;
+          width: 18rem;
+          height: 26rem;
+        }
+
+    
+        article{ 
+
+          .movie-stats {
+            flex-direction: row;
+
+            .movie-time {
+              margin-bottom: 0rem;
+            }
+            
+            .movie-stars {
+              margin-bottom: 0rem;
+            }
+
+          }
+    
+        }
+    
+      }
       
     }
 }

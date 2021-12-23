@@ -1,7 +1,7 @@
 import "./fonts/B612-Regular.ttf";
 import "./fonts/B612-Bold.ttf";
 import capaLoki from "./img/capaLoki.png";
-import bgLoki from "./img/bgLoki.jpg";
+import "./img/bgLoki.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
