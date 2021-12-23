@@ -174,8 +174,14 @@
     
         article{ 
 
+          p {
+            margin-bottom: 4rem;
+            text-align: left;
+          }
+
           .movie-stats {
             flex-direction: row;
+            justify-content: space-between;
 
             .movie-time {
               margin-bottom: 0rem;
@@ -186,6 +192,24 @@
             }
 
           }
+
+          .container-buttons {
+
+            flex-direction: row;
+  
+            .btn-primary {
+              padding: 1.5rem 2.7rem;
+              font-size: 1.4rem;
+              margin-bottom: 0;
+              margin-right: 2rem;
+            }
+  
+            .btn-secondary {
+              padding: 1.5rem 2.7rem;
+              font-size: 1.4rem;
+            }
+  
+        }
     
         }
     
