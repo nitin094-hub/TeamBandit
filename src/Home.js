@@ -16,16 +16,38 @@ export default class Home extends React.Component {
     super(props)
     this.state = {
       isWatchNow: false,
-      isWatchTrailer: false
+      isWatchTrailer: false,
+      rating: 0,
+      hover: 0
     }
   }
 
   handleWatchNow = (value) => {
-    this.setState({isWatchNow: value})
+    this.setState({
+      ...this.state,
+      isWatchNow: value
+    })
   }
 
   handleWatchTrailer = (value) => {
-    this.setState({isWatchTrailer: value})
+    this.setState({
+      ...this.state,
+      isWatchTrailer: value
+    })
+  }
+
+  handleRating = (value) => {
+    this.setState({
+      ...this.state,
+      rating: value
+    })
+  }
+
+  handleHover = (value) => {
+    this.setState({
+      ...this.state,
+      hover: value
+    })
   }
 
   render() {
@@ -51,11 +73,23 @@ export default class Home extends React.Component {
                 <span>51min</span>
               </div>
               <div className="movie-stars">
-                <FontAwesomeIcon className="star active" icon={faStar} />
-                <FontAwesomeIcon className="star active" icon={faStar} />
-                <FontAwesomeIcon className="star active" icon={faStar} />
-                <FontAwesomeIcon className="star active" icon={faStar} />
-                <FontAwesomeIcon className="star" icon={faStar} />
+                {
+                  [...Array(5)].map((star, index) => {
+                      index+=1;
+                      return (
+                        <button 
+                          type="button" 
+                          key={index}
+                          onClick={()=>{this.handleRating(index)}}
+                          onMouseEnter={()=>{this.handleHover(index)}}
+                          onMouseLeave={()=>{this.handleHover(this.state.rating)}}
+                        >
+                           <FontAwesomeIcon className={ index <= (this.state.hover || this.state.rating) ? "star active": "star"} icon={faStar} />
+                        </button>
+                      )
+                      
+                  })
+                }                
               </div>
               <span className="movie-years">2021</span>
             </div>

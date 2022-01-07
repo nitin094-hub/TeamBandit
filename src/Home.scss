@@ -73,6 +73,14 @@
         
         .movie-stars {
           margin-bottom: 1.5rem;
+
+          button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+          }
+          
         }
 
         span {
@@ -197,7 +205,7 @@
             }
             
             .movie-stars {
-              margin-bottom: 0rem;
+              margin-bottom: 0rem;              
             }
 
           }
