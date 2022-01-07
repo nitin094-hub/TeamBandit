@@ -122,6 +122,7 @@
             color: var(--white);
             font-family: "B612-Regular";
             margin-bottom: 2rem;
+            cursor: pointer;
           }
 
           .btn-secondary {
@@ -133,6 +134,14 @@
             border-radius: .3rem;
             color: var(--white);
             font-family: "B612-Regular";
+            cursor: pointer;
+            opacity:1;
+            transition: 1s;              
+          }
+
+          .btn-primary:hover, .btn-secondary:hover {
+            opacity:0.7;
+            transition: 1s;  
           }
 
       }
