@@ -2,6 +2,8 @@ import React from "react"
 import "./fonts/B612-Regular.ttf";
 import "./fonts/B612-Bold.ttf";
 import capaLoki from "./img/capaLoki.png";
+import capaRing from "./img/capaRing.png";
+import capaHarry from "./img/capaHarry.jpg";
 import "./img/bgLoki.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from "@fortawesome/free-solid-svg-icons";
@@ -52,14 +54,16 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <main className="content">
+      <main className="content bg-Loki">
         <header>
           <h2>ESTÁ DISPONÍVEL AGORA!</h2>
           <h1>LOKI</h1>
         </header>
         <section>
           <aside>
-            <img src={capaLoki} alt="Capa do Trailer da série Loki"></img>
+            <img src={capaLoki} alt="Capa do Trailer de Loki"></img>
+            {/* <img src={capaRing} alt="Capa do Trailer do Senhor dos Anéis"></img>
+            <img src={capaHarry} alt="Capa do Trailer do Harry Potter"></img> */}
           </aside>
           <article>
             <p>
