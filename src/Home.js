@@ -67,9 +67,9 @@ export default class Home extends React.Component {
           </aside>
           <article>
             <p>
-              Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston) 
-              retoma seu papel como o Deus do Mal em uma nova série 
-              que ocorre após os eventos de “Vingadores: Endgame”. 
+              Em “Loki” da Marvel Studios, o vilão mercurial Loki (Tom Hiddleston)
+              retoma seu papel como o Deus do Mal em uma nova série que ocorre após 
+              os eventos de “Vingadores: Endgame”. 
             </p>
             <div className="movie-stats">
               <div className="movie-time">

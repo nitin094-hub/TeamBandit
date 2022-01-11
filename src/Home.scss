@@ -178,7 +178,10 @@
 
 @media(min-width: 768px) {
     .content {
-      padding: 4.5rem 23rem;
+      padding: 4.5rem 5rem;      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       
       header {
         text-align: center;
@@ -188,7 +191,7 @@
         }
     
         h1 {
-          margin-bottom: 12.1rem;
+          margin-bottom: 5rem;
         }
     
       } 
@@ -196,13 +199,16 @@
       section {
 
         display: grid;
-        grid-template-columns: .5fr 2fr;
+        grid-template-columns: 20% 80%;
         align-items: center;
+        justify-items: end;
+        grid-column-gap: 20px;
 
         aside img {
           display: block;
           width: 18rem;
           height: 26rem;
+          object-fit: cover;
         }
 
     
@@ -210,19 +216,20 @@
 
           p {
             margin-bottom: 4rem;
-            text-align: left;
+            text-align: left;            
           }
 
           .movie-stats {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
 
             .movie-time {
               margin-bottom: 0rem;
             }
             
             .movie-stars {
-              margin-bottom: 0rem;              
+              margin-bottom: 0rem;  
+              margin: 0 10rem 0 10rem            
             }
 
           }
@@ -252,3 +259,15 @@
     }
 }
 
+@media(min-width: 1024px) {
+  .content {
+
+    section {
+
+      grid-template-columns: 30% 60%;
+      grid-column-gap: 35px;
+  
+    }
+    
+  }
+}
