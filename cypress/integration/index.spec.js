@@ -1,3 +1,4 @@
+/* eslint-disable jest/valid-expect-in-promise */
 /* eslint-disable no-undef */
 describe('Movie Tests', () => {
 
@@ -6,7 +7,7 @@ describe('Movie Tests', () => {
     });
 
     context("Stars",()=>{
-        it.only('Hover and Click Star', () => {
+        it('Hover and Click Star', () => {
             cy.get(".movie-stars :nth-child(5) svg")
                 .trigger('mouseover')
                 .then(($value)=>{
@@ -20,7 +21,7 @@ describe('Movie Tests', () => {
 
     context('Modals',() => {
         
-        it.only('Open and Close Movie Modal', () => {
+        it('Open and Close Movie Modal', () => {
             cy.contains("ASSISTIR AGORA").click();
             cy.wait(5000)
             cy.get('iframe').should("be.visible")
